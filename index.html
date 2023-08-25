@@ -1,284 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raihan | Portofolio</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Meddon' rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/bakbak-one" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    
-    
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        /* Navigation Bar Section */
+   
 
-        .navigation-bar{
-            width: 100vw;
-            height: 10vh;
-            background: #303030;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            box-shadow: unset;
-        }
-        .navbar-brand-section{
-            width: 40%;
-            height: 100%;
-            font-family: Lucida Console;
-            font-size: medium;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #d9d9d9;
-        }
-        .navbar-button-section{
-            width: 60%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .navbar-button-section ul{
-            list-style-type: none;
-        }
-        .navbar-button-section li{
-            display: inline;
-            margin: 15px;
-            box-shadow: inset 0 0 0 0 #364B82;
-            color: #364B82;
-            transition: color .5s ease-in-out;box-shadow: .5s ease-in-out;
-        }
-        .navbar-button-section li:hover{
-            box-shadow: inset 100px 0 0 0 #364B82;
-            color: #303030;
-        
-        }
-        .navbar-button-section li a{
-            text-decoration: none;
-            color: #d9d9d9;
-        }
-        .dropdown{
-            display: none;
-            position: absolute;
-            background-color: #d9d9d9;
-            text-decoration: none;
-            width: 100%;
-            left: 0;
-            top: 65px;
-            padding: 5px;
-        }
-        .dropdown li{
-            list-style: none
-        }
-        .dropdown li a{
-            text-decoration: none;
-        }
-        .toggle{
-            display: none;
-        }
-        .toggle:hover .dropdown{
-            display: block;
-        }
-        @media screen and (max-width:768px) {
-            .navbar-button-section{
-                display: none;
-            }
-            .toggle{
-                display: block;
-            }
-        }
-        /* Content Section */
-        .hero{
-            width: 100vw;
-            height: 500px;
-            background-color: #e6e6e6;
-            display: flex;
-        }
-        .title-section{
-            width: 40%;
-            padding-left: 150px;
-            padding-top: 150px;
-            background: #e6e6e6;
-            align-items: center;
-        }
-        .title-text{
-            font-weight: bold;
-            color: #2F2F2F;
-            font-family: 'Azeret Mono', monospace;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 575;
-            line-height: normal;
-            margin-bottom: 5px;
-        }
-        .text-line{
-            width: 100px; 
-            border: 0.50px black solid;
-            margin-bottom: 10px;
-        }
-        .title-tagline{
-            color: #404040;
-            font-size: 15px;
-            font-family: 'Azeret Mono', monospace;
-            font-weight: 400;
-            margin-top: 10px;
-        }
-        .title-explore-button{
-            margin-top: 30px;
-            border-color: #fff;
-        }
-        .btn-explore{
-            background-color: #364B82;
-            padding: 10px 15px;
-            border-radius: 15px;
-            font-weight: 700;
-            text-decoration: none;
-            color: #e6e6e6;
-            transition-duration: 0.4s;
-            cursor: pointer;
-            border-color: #ffffff00;
-            border-style: solid
-        }
-        .btn-explore:hover{
-            background-color: #ffffff00;
-            color: #364B82;
-            border-color: #364B82;
-        }
-        .svg-1{
-            margin: 70px;
-            position: absolute;
-        }
-        .svg-1 img{
-            width: 350px;
-
-        }
-        .hero2{
-            width: 44%;
-            padding: 5%;
-            height: 500px;
-            flex-shrink: 0;
-            background: #C3C3C3;
-        }
-        .introduction-section{
-            margin-top: 100px;
-            margin-left: 100px;
-        }
-        .introduction{
-            color: #1B1B1B;
-            font-family: Azeret Mono;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-        .experience-title{
-            color: #2F2F2F;
-            margin-top: 10px;
-            font-family: Azeret Mono;
-            font-size: 35px;
-            font-style: normal;
-            font-weight: 550;
-            line-height: normal;
-        }
-        .experience-content{
-            color: #262626;
-            margin-top: 10px;
-            font-family: Azeret Mono;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-  
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navigation-bar">
-        <div class="navbar-brand-section">
-            <h1>Raihan</h1>
+      <div class="navbar-brand-section">
+        <h1>Raihan</h1>
+      </div>
+      <div class="navbar-button-section">
+        <div class="navbar-button-list">
+          <div class="navbar-itemlist">
+            <ul>
+              <li><a class="home-item" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="navbar-button-section">
-            <div class="navbar-button-list">
-                <div class="navbar-itemlist">
-                    <ul>
-                        <li><a class="home-item" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Works</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </div>
-            </div>   
-        </div>
-    <div class="toggle">
+      </div>
+      <div class="toggle">
         <a href="#"><b>|||</b></a>
         <ul class="dropdown">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contacts</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Contacts</a></li>
         </ul>
-    </div>
+      </div>
     </div>
     <div class="hero">
-        <div class="title-section">
-            <div class="title-text">
-                <p>Hi,<br> My name is Raihan</p>
-            </div>
-            <div class="text-line">
-                <div class="line-1"></div>
-            </div>
-            <div class="title-tagline">
-                <p>Website/App Developer, Designer</p>
-            </div>
-            <div class="title-explore-button">
-                <button href="#" class="btn-explore">See more</a>
-            </div>
+      <div class="title-section" data-aos="fade-right">
+        <div class="title-text">
+          <p>
+            Hi,<br />
+            My name is <span class="span-blue">Raihan</span>
+          </p>
         </div>
-        <div class="picture-section">
-            <div class="svg-1">
-                <img src="SVG-portofolio-1.svg" alt="">
-            </div>
+        <div class="text-line">
+          <div class="line-1"></div>
         </div>
+        <div class="title-tagline">
+          <p>Website/App Developer, Designer</p>
+        </div>
+        <div class="title-explore-button">
+          <button href="#" class="btn-explore">See more</button>
+        </div>
+      </div>
+      <div class="picture-section">
+        <div class="svg-1">
+          <img src="SVG-portofolio-1.png" data-aos="fade-left"/>
+        </div>
+      </div>
     </div>
-    <!-- Hero 2 Section -->
+    <!-- About me section -------------------------------------------------------------------------------------- -->
     <div class="hero2">
-        <div class="introduction-section">
-            <div class="introduction">
-                <p>-introduction</p>
-            </div>
-            <div class="experience">
-                <div class="experience-title">
-                    <p>Raihan's Experience</p>
-                </div>
-                <div class="experience-content">
-                    <p>Raihan's a Professional Developer that specializes in Website and App development but he is also talented at Designing UI/UX, 3D, and 2D designs.</p>
-                </div>
-            </div>
-            <div class="experience-statistics">
-                <div class="stat-1"><div class="years-of-experience">years of experience</div>
-                <div class="_2-5">2.5</div>
-                <div class="_69">69</div>
-            </div>
-                <div class="stat-2">
-                    <div class="finished-projects">Finished projects</div>
-                </div>
-            </div>
+      <div class="quotes-section">
+        <div class="quotes-item" >
+          <div class="quotes">
+            <p data-aos="fade-right">
+              "Testing leads to
+              <span class="span-blue">Failure</span>, and,
+              failure leads to
+              <span class="span-blue">Understanding</span>."
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="introduction-section" data-aos="fade-right">
+        <div class="introduction">
+          <p>- I N T R O D U C T I O N</p>
+        </div>
+        <div class="experience">
+          <div class="experience-title">
+            <p>Raihan's Experience</p>
+          </div>
+          <div class="experience-content">
+            <p>
+              Raihan's a Professional Developer that specializes in Website and
+              App development but he is also talented at Designing UI/UX, 3D,
+              and 2D designs.
+            </p>
+          </div>
+        </div>
+        <div class="experience-statistics">
+          <div class="statistics-1">
+            <a>2.5</a>
+          </div>
+          <div class="statistic-text-1">
+            <p>Years of <br />experience</p>
+          </div>
+          <div class="statistics-2">
+            <a>69</a>
+          </div>
+          <div class="statistic-text-2">
+            <p>Finished <br />projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Skill Section --------------------------------------------------------------------------------------------- -->
+    <div class="hero3"> 
+      <div class="skill-section">
+        <div class="skills">
+          <p>- S K I L L S</p>
+        </div>
+        <div class="widget-area">
+          <button class="widget-1" data-aos="fade-left">
+            <img src="desktop-svg.svg">
+            <h1>Developer</h1>
+            <p>Developed websites, Applications, Systems, etc</p>
+          </button>
+          <button class="widget-1" data-aos="fade-left" data-aos-delay="500">
+            <image src="pen-svg.svg"></image>
+            <h1>Designer</h1>
+            <p>UI/UX, 3D and 2D designs.</p>
+          </button>
+          <button class="widget-1" data-aos="fade-left" data-aos-delay="1000">
+            <image src="profile-svg.svg">
+            <h1>Speaker</h1>
+            <p>Lorem, ipsum dolor.</p>
+          </button>
+      </div>
     </div>
 
+<!-- Projects Section ------------------------------------------------------------------------------------------ -->
 
-</body>
+    <div class="hero4">
+      <div class="project-area">
+        
+      </div>
+    </div>
+
+    <script src=”script.js”></script>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: false,
+    });
+  </script>
+  </body>
 </html>
