@@ -42,8 +42,12 @@
   .navbar-button-section li {
     display: inline;
     margin: 15px;
+  }
 
-
+  .navbar-button-section li:hover{
+    text-decoration: underline, #364b82; 
+    font-style: bold;
+    
 
   }
   .navbar-button-section li a {
@@ -111,6 +115,9 @@
   .span-blue{
     color: #364b82;
   }
+  .raihan-span{
+    color: #364b82;
+  }
   .text-line {
     width: 100px;
     border: 0.5px black solid;
@@ -150,7 +157,7 @@
     position: absolute;
   }
   .svg-1 img {
-    width: 400px;
+    width: 323px;
   }
 
   /* About me Section --------------------------------------------------------------------------------------------*/
@@ -160,7 +167,6 @@
 
     background-color: #d9d9d9;
     display: flex;
-    overflow: hidden;
   }
   .introduction-section {
     width: 40%;
@@ -279,6 +285,7 @@
   }
   .widget-1{
     flex-wrap: wrap;
+    text-align: left;
     height: 200px;
     width: 90%;
     background: #fff;
@@ -292,13 +299,12 @@
     cursor: pointer;
     border-color: #ffffff;
     border-style: solid;
+    transition: color 0.5s,
   }
   .widget-1:hover{
     background-color: #364b82;
-    color: #e6e6e6;
-    border: none;
-    box-shadow: outset;
-    transform: (translateY(-20px));
+    transform: translateY(-15px);
+ 
   }
   .widget-1 img{
     width: 40px;
@@ -314,3 +320,10 @@
 
 /* Projects section -------------------------------------------------------------------------------------------- */
 
+.hero4 {
+  width: 100vw;
+  height: 80vh;
+  background-color: #e6e6e6;
+  display: flex;
+}
+.project-area
